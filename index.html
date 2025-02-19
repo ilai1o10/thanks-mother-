@@ -1,0 +1,85 @@
+<!DOCTYPE html><html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>תג תודה מטורף!</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');body {
+        background: radial-gradient(circle, #ff00ff, #8000ff, #00ffff);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        overflow: hidden;
+        font-family: 'Russo One', sans-serif;
+        color: white;
+    }
+
+    .card {
+        position: relative;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        padding: 30px;
+        border-radius: 50%;
+        width: 300px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+        text-align: center;
+        animation: pop 1s ease-in-out;
+    }
+
+    @keyframes pop {
+        0% { transform: scale(0.5); opacity: 0; }
+        100% { transform: scale(1); opacity: 1; }
+    }
+
+    h1 {
+        font-size: 1.8rem;
+        text-shadow: 0 0 10px white, 0 0 20px cyan;
+        margin: 0;
+    }
+
+    .emoji {
+        font-size: 3rem;
+        animation: glow 1.5s infinite alternate;
+    }
+
+    @keyframes glow {
+        0% { text-shadow: 0 0 10px yellow, 0 0 20px orange; }
+        100% { text-shadow: 0 0 20px yellow, 0 0 30px red; }
+    }
+
+    .button {
+        margin-top: 15px;
+        padding: 10px 20px;
+        background: linear-gradient(45deg, #ff0099, #ff6600);
+        border: none;
+        border-radius: 20px;
+        font-size: 1rem;
+        color: white;
+        cursor: pointer;
+        transition: 0.3s;
+        box-shadow: 0 0 10px rgba(255, 0, 150, 0.7);
+    }
+
+    .button:hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 20px rgba(255, 0, 150, 1);
+    }
+</style>
+
+</head>
+<body>
+    <div class="card">
+        <h1>תודה מטורפת!</h1>
+        <p>אין עליך! אתה פשוט קסם מהלך 💫</p>
+        <div class="emoji">🔥🎉💖</div>
+        <button class="button" onclick="alert('אתה מדהים! 💫')">לחץ כאן להפתעה</button>
+    </div>
+</body>
+  </html>
